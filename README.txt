@@ -1,0 +1,1 @@
+This is a project to create a Raspberry PI Weather Station. I used a Raspberry Pi and a LCD Touch Screen.
