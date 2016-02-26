@@ -1,7 +1,9 @@
 #!/usr/bin/env python
-import sys, json, urllib, time, io
+import sys, json, urllib, time, io,os
 import pygame 
 from pygame.locals import *
+
+os.environ["SDL_FBDEV"] = "/dev/fb1"
 
 #Initialize variables
 quit = False
