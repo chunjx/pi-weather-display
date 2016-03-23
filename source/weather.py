@@ -203,7 +203,8 @@ while not quit:
     displayweather(jsoninfo)
     displayforecast(jsonforecast)
 
-    if time.time()-current_time > 30:
+    # Throttle the calls to the API to avoid going over on the quota
+    if time.time()-current_time > 60:
         print time.time()-current_time
         jsoninfo = getcurrentconditionsdata()
         jsonforecast = getforecastdata()
